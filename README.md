@@ -1,1 +1,1 @@
-# COMSC120
+# COMSC110
