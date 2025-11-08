@@ -1,0 +1,28 @@
+# Exercise Lab 1: Calculating the Sales Price
+
+# Step 1: Input the original price
+original_price = int(input("Enter the original price ($): "))
+
+# Step 2: Input the discount rate (percentage)
+rate = int(input("Enter the discount rate (%): "))
+
+# Step 3: Calculate the discount amount
+discount_amount = original_price * rate / 100
+
+# Step 4: Calculate the final price
+final_price = original_price - discount_amount
+
+# Step 5: Print results
+print("Original Price: $" + str(original_price))
+print("Discount Amount: $" + str(int(discount_amount)))
+print("The final price: $" + str(int(final_price)))
+
+
+
+200
+20
+
+
+Original Price: $200
+Discount Amount: $40
+The final price: $160
