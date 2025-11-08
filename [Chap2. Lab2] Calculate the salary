@@ -1,0 +1,32 @@
+# Exercise Lab 2: Calculating the Salary
+
+# Step 1: Assign the given constant values
+reg_hours = 40
+reg_rate = 18.25
+ov_rate = 27.78
+
+# Step 2: Input work hours
+workhours = int(input("Enter your work hours: "))
+
+# Step 3: Calculate the overtime hours
+overtime_hours = workhours - reg_hours
+
+# Step 4: Calculate the regular wage
+regular_wage = reg_hours * reg_rate
+
+# Step 5: Calculate the overtime wage
+overtime_wage = overtime_hours * ov_rate
+
+# Step 6: Calculate total wage
+total_wage = regular_wage + overtime_wage
+
+# Step 7: Display the results
+print("Regular Charge:", regular_wage)
+print("Overtime Charge:", overtime_wage)
+print("Total wage:", total_wage)
+
+Enter your work hours: 50
+
+Regular Charge: 730.0
+Overtime Charge: 277.8
+Total wage: 1007.8
