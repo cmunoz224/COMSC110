@@ -1,0 +1,33 @@
+# Exercise Lab 3: Calculating an Average
+
+# Step 1: Input the first integer value
+val1 = int(input("Enter the first integer: "))
+
+# Step 2: Input the second integer value
+val2 = int(input("Enter the second integer: "))
+
+# Step 3: Input the third integer value
+val3 = int(input("Enter the third integer: "))
+
+# Step 4: Calculate the total
+total = val1 + val2 + val3
+
+# Step 5: Calculate the average
+average = total / 3
+
+# Step 6: Print the three values in one line
+print("Values:", val1, val2, val3)
+
+# Step 7: Print the total
+print("Total:", total)
+
+# Step 8: Print the average with two decimal places
+print(f"Average:\t{average:.2f}")
+
+100
+90
+110
+
+Values: 100 90 110
+Total: 300
+Average:   100.00
