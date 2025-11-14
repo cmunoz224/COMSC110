@@ -1,0 +1,17 @@
+Celsius to Fahrenheit Converter
+
+# 1. Get user input for Celsius temperature
+# The input is converted to a floating-point number (float) to handle fractional values.
+celsius = float(input("Enter a temperature in Celsius: "))
+
+# 2. Apply the conversion formula: F = (9/5) * C + 32
+# The problem specifies using the variable name 'fahrenheit' for the result.
+fahrenheit = (9/5) * celsius + 32
+
+# 3. Display the result, formatted to two decimal places
+# The expected output format is: Fahrenheit: 73.40 (for input 23)
+# The provided print statement template is: print(f'The converted F is \t{fahrenheit:.2f}')
+# Adjusting to match the expected output style (Fahrenheit: XX.XX)
+print(f"Farenheit: {fahrenheit:.2f}")
+
+# print(f"The converted F is \t{fahrenheit:.2f}")
