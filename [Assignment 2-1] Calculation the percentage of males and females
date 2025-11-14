@@ -1,0 +1,31 @@
+# Assignment 1: Male, Female, and Others Percentages
+
+# Ask for user input
+male = int(input("Enter number of male students: "))
+female = int(input("Enter number of female students: "))
+non_binary = int(input("Enter number of non-binary students: "))
+
+# Calculate total number of students
+total = male + female + non_binary
+
+# Calculate percentages
+m_perc = (male / total) * 100
+f_perc = (female / total) * 100
+nb_perc = (non_binary / total) * 100
+
+# Output results
+print("The total number of students:", total)
+print("The number of males, females, and non-binary:")
+print(male, female, non_binary)
+print("The percentage of males, females, and non-binary:")
+print(f"{m_perc:.2f}%\t{f_perc:.2f}%\t{nb_perc:.2f}%")
+
+40
+40
+20
+
+The total number of students: 100
+The number of males, females, and non-binary:
+40 40 20
+The percentage of males, females, and non-binary:
+40.00%    40.00%    20.00%
