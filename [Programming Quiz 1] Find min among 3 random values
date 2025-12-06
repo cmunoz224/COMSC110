@@ -1,0 +1,43 @@
+def main():
+    num1 = int(input('Enter the first number: '))
+    num2 = int(input('Enter the second number: '))
+    num3 = int(input('Enter the third number: '))
+    """
+    ########################################
+    Code Your Program here
+    ########################################
+    """
+
+    # Step 1: determine the minimum value
+    if num1 <= num2 and num1 <= num3:
+        minval = num1
+    elif num2 <= num1 and num2 <= num3:
+        minval = num2
+    else:
+        minval = num3
+
+    # Step 2: determine the maximum value
+    if num1 >= num2 and num1 >= num3:
+        maxval = num1
+    elif num2 >= num1 and num2 >= num3:
+        maxval = num2
+    else:
+        maxval = num3
+
+    # Step 3: determine the median (the number that is not min or max)
+    if (num1 != minval and num1 != maxval):
+        median = num1
+    elif (num2 != minval and num2 != maxval):
+        median = num2
+    else:
+        median = num3
+
+    ########################################
+    # Do not delete the return statement
+    ########################################
+    print(minval, median, maxval)
+    return minval, median, maxval
+
+
+if __name__ == '__main__':
+    main()
