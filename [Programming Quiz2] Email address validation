@@ -1,0 +1,35 @@
+def main():
+    email = input('Enter your email: ')
+    """
+    ########################################
+    Code Your Program here
+    ########################################
+    """
+
+    # Start with assuming the email is invalid
+    result = False
+
+    # Condition 1: First character must be a letter
+    if len(email) > 0 and email[0].isalpha():
+
+        # Condition 2: Length must be > 5 AND < 30
+        if len(email) > 5 and len(email) < 30:
+
+            # Condition 3: Must contain '@'
+            at_index = email.find('@')
+            if at_index != -1:
+
+                # Condition 4: There must be at least ONE '.' AFTER the '@'
+                dot_index = email.find('.', at_index + 1)
+                if dot_index != -1:
+                    result = True
+
+    ########################################
+    # Do not delete the return statement
+    ########################################
+    print(result)
+    return result
+
+
+if __name__ == '__main__':
+    main()
