@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+
+    // Ask the user for input
+    cout << "Input: ";
+    cin >> n;
+
+    // Loop through rows
+    for (int i = 1; i <= n; i++) {
+        // Print letters for each row
+        for (int j = 0; j < i; j++) {
+            cout << char('A' + j);
+
+            // Add space except after last letter
+            if (j < i - 1) {
+                cout << " ";
+            }
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
